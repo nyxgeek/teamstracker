@@ -24,6 +24,7 @@ import argparse
 import json
 import array
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sqldb_location = 'data/teamstracker.db'
 
 
