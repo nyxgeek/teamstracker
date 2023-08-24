@@ -221,11 +221,11 @@ def checkURL(objectidline, name='', email=''):
                     #print("Currentdate is: {0}".format(currentdate))
                     sqldata = (objectidline, emailaddress, displayname, availability, ooo_enabled, statusmsg, currenttime, currentdate, qh_period, hh_period)
                     print(sqldata)
-                    sql_insert_presence(objectidline, emailaddress, displayname, availability, ooo_enabled, statusmsg, currenttime, currentdate, qh_period, hh_period)
+                    sql_insert_presence(objectidline, emailaddress, displayname.replace("'","''"), availability, ooo_enabled, statusmsg, currenttime, currentdate, qh_period, hh_period)
 
                     if ooo_enabled == 1:
                         print("**** going to insert ooo data now ***")
-                        sql_insert_ooo(objectidline, emailaddress, displayname, ooo_text, currentdate, currenttime)
+                        sql_insert_ooo(objectidline, emailaddress, displayname.replace("'","''"), ooo_text, currentdate, currenttime)
 
                 else:
                     print("Adding bad ID to array: " + objectidline)
