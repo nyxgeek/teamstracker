@@ -1,4 +1,9 @@
+
 # TeamsTracker
+
+## ATTENTION: THIS IS BORKED NOW. Microsoft fixed within 24 hours of release. Sorry!
+
+### Will be releasing more tooling around this using bearer token, or accounts.
 
 tool from dc31 talk - Track the Planet. See slides here: https://github.com/nyxgeek/track_the_planet
 
